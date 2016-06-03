@@ -16,7 +16,7 @@ var howTo = {
           'He is probably voting for Trump',
           'Also hate Daniel because of all the same reasons'
         ],
-  images: '/images/bennett.png'
+  images: ['/images/bennett.png', '/images/youre-annoying.jpg', '/images/fingers.jpg']
 };
 
 module.exports = howTo;

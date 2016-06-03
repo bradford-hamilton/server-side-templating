@@ -14,7 +14,8 @@ router.get('/how-to-hate-bennett', function (request, response) {
   response.render('how-to-hate-bennett', { steps: reasons.firstSteps,
                                           title: "First Steps",
                                           back: '/',
-                                          next: '/how-to-hate-bennett/keep-going'
+                                          next: '/how-to-hate-bennett/keep-going',
+                                          image: reasons.images[1]
                                          });
 });
 
@@ -22,7 +23,8 @@ router.get('/how-to-hate-bennett/keep-going', function(request, response) {
   response.render('how-to-hate-bennett', { steps: reasons.secondSteps,
                                            title: "Second Steps",
                                            back: '/how-to-hate-bennett',
-                                           next: '/how-to-hate-bennett/keep-going/last-steps'
+                                           next: '/how-to-hate-bennett/keep-going/last-steps',
+                                           image: reasons.images[2]
                                          });
 });
 
@@ -31,7 +33,7 @@ router.get('/how-to-hate-bennett/keep-going/last-steps', function(request, respo
                                            title: "Last Steps!",
                                            back: '/how-to-hate-bennett/keep-going',
                                            next: '/how-to-hate-bennett/keep-going',
-                                           image: reasons.images
+                                           image: reasons.images[0]
                                          });
 });
 
